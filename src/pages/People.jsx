@@ -52,8 +52,13 @@ export default function People() {
   const fetchedPeople = peopleList.items
 
   return (
-    <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2 gap-y-4'>
+    <>
+    <div className='flex justify-center my-10 py-4 bg-peopleTitle '>
+      <h1 >People List</h1>
+    </div>
+    <ul className='ml-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2 gap-y-4'>
       {fetchedPeople.map((person) => <PersonCard key={person.id} person={person}/>)}
     </ul>
+    </>
   );
 }
