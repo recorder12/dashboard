@@ -11,6 +11,7 @@ module.exports = {
         peopleTitle: "#e67e22",
         personCard: "#95a5a6",
         personCardHover: "#ecf0f1",
+        requestCard: "#c8d6e5",
       },
     },
   },

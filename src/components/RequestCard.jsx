@@ -3,8 +3,8 @@ import React from 'react';
 export default function RequestCard ({request}) {
     const {id, photo, name, type, status, createdAt} = request;
   return (
-    <li className='flex flex-row'>
-        <div className='w-1/5 flex justify-center bg-sky-500'>
+    <li className='flex flex-row my-4 bg-requestCard rounded-full p-4'>
+        <div className='w-1/5 flex justify-center'>
             <h1>{id}</h1>
         </div>
 
